@@ -3,7 +3,7 @@
         <div class="flex justify-between h-16">
             <div class="flex">
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('home') }}">
+                    <a href="{{ route('home') }}" class="dark:text-gray-100">
                         {{ __('Calculator') }}
                     </a>
                 </div>

@@ -10,7 +10,7 @@ class CalculatorControllerTest extends TestCase
     #[DataProvider('operationsDataProvider')]
     public function testItCalculatesValidData(string $operation, float $a, float $b, float $result): void
     {
-        $response = $this->postJson(route('calculate'), compact('operation', 'a', 'b'));
+        $response = $this->postJson(route('api.calculate'), compact('operation', 'a', 'b'));
 
         $response->assertStatus(200);
         $response->assertJson(compact('result'));
